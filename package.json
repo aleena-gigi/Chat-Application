@@ -1,0 +1,3 @@
+{"scripts":{"devStart":"nodemon chatserver.js"},
+"dependencies":{"express":"^4.18.1","socket.io":"^4.5.1"},
+"devDependencies":{"nodemon":"^2.0.16"}}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <script defer src="http://localhost:4000/socket.io/socket.io.js"></script>  <!--This is the js file that includes io funct in client.js-->
+    <script defer src="chat.js"></script>
+</head>
+<style>
+    #msg-box{
+        padding: 10px;
+        margin: 2px;
+        height:500px;
+        background-color: aquamarine;
+    }
+    #send-button{
+        padding:10px;
+        width:auto;
+        background-color: rgb(165, 198, 165);
+    }
+    #msg-input,#name{
+        width:800px;
+        height:50px;
+    }
+</style>
+<body>
+    <form id="send-container">
+        <div id="msg-box"></div>
+        <label>Name</label>
+        <input type="text" id="name" ><br>
+        <label>Message</label>
+        <input type="text" id="msg-input"><br>
+        <button type="submit" id="send-button">Send</button>
+    </form>
+</body>
+</html>
